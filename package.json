@@ -1,5 +1,5 @@
 {
-  "name": "flexi-layer",
+  "name": "@enrivera/flexi-layer",
   "version": "0.1.0",
   "description": "Accessible, stackable modal/dialog web component built with Lit 3",
   "type": "module",
@@ -33,5 +33,9 @@
     "typescript": "^5.9.3",
     "vite": "^5.4.21",
     "vitest": "^1.0.0"
+  },
+  "repository": "https://github.com/EnriVera/flexi-modal",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

@@ -14,15 +14,27 @@ An accessible, stackable, framework-agnostic modal/dialog web component built wi
 ## Installation
 
 ```bash
-npm install flexi-layer
+npm install @enrivera/flexi-layer
 ```
+
+> **Note:** This package is published to GitHub Packages. Add this to your project's `.npmrc` or `package.json` if needed:
+> ```
+> @enrivera:registry=https://npm.pkg.github.com/
+> ```
 
 ## Quick Start
 
 ### Import the module
 
 ```html
-<script type="module" src="flexi-layer/dist/flexi-layer.es.js"></script>
+<script type="module" src="https://npm.pkg.github.com/@enrivera/flexi-layer"></script>
+```
+or via npm:
+```bash
+npm install @enrivera/flexi-layer
+```
+```html
+<script type="module" src="node_modules/@enrivera/flexi-layer/dist/flexi-layer.es.js"></script>
 ```
 
 ### Basic Layer
@@ -71,10 +83,10 @@ layer.push(content)    // Push dynamic content
 
 ## Event Bus API (FlexiEventBus)
 
-For centralized layer control across your entire app:
+For centralized layer control across your entire app. Configure the registry first as shown in [Installation](#installation), then:
 
 ```javascript
-import { FlexiEventBus } from 'flexi-layer';
+import { FlexiEventBus } from '@enrivera/flexi-layer';
 
 // Open
 FlexiEventBus.open({ target: '#my-layer' });
